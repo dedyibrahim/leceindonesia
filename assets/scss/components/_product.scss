@@ -1,0 +1,179 @@
+/*----------------------------------------*/
+/*  19. Product
+/*----------------------------------------*/
+.product{
+    &-img{
+        position: relative;
+        overflow: hidden;
+        a{
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+        .add-action{
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: $baseTransition;
+        }
+    }
+    &-content{
+        .title{
+            font-size: 28px;
+        }
+    }
+    &-item{
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        &:hover{
+            .add-action{
+                bottom: 20px;
+            }
+        }
+    }
+}
+
+/* ---Product Detail Review--- */
+.product{
+    &-detail{
+        &-content{
+            .title{
+                font-size: 60px;
+                line-height: 60px;
+                @media (max-width: 479px) {
+                    font-size: 45px;
+                    line-height: 45px;
+                }
+            }
+        }
+        &-review{
+            display: flex;
+            align-items: center;
+        }
+        &-info{
+            span{
+                display: block;
+            }
+        }
+        &-tab{
+            ul{
+                &.nav-pills{
+                    @include media-breakpoint-down(sm){
+                        flex-direction: column;
+                        li{
+                            width: 25%;
+                            text-align: center;
+                            a{
+                                &.nav-link{
+                                    border: 1px solid $border-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                li{
+                    width: 25%;
+                    text-align: center;
+                    @include media-breakpoint-down(xl){
+                        width: auto;
+                    }
+                    @include media-breakpoint-down(sm){
+                        width: 100% !important;
+                    }
+                    a{
+                        &.nav-link{
+                            border-top: 1px solid $border-color;
+                            border-left: 1px solid $border-color;
+                            border-bottom: 1px solid $border-color;
+                            border-radius: 0;
+                            font-size: 20px;
+                            font-weight: 600;
+                            font-family: $rajdhani;
+                            padding-left: 0;
+                            padding-right: 0;
+                            @include media-breakpoint-down(xl){
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                            @include media-breakpoint-down(md){
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                            &.active{
+                                background-color: $secondary;
+                                border-color: $secondary;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            &.nav-link{
+                                border-right: 1px solid $border-color;
+                            }
+                        }
+                    }
+                    &:not(:last-child){
+                        @include media-breakpoint-down(sm){
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+            .description{
+                &-body{
+                    h3{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    &-qty-with-btn{
+        display: flex;
+        @media (max-width: 479px){
+            flex-direction: column;
+            .quantity{
+                padding-bottom: 20px;
+            }
+            .button-wrap{
+                padding-left: 0 !important;
+            }
+        }
+        .quantity{
+            display: flex;
+            align-items: center;
+            label{
+                margin-right: 10px;
+            }
+        }
+    }
+    &-detail-tags{
+        display: flex;
+        span{
+            margin-right: 5px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                &:not(:last-child){
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* ---Product Detail Slider--- */
+.product{
+    &-detail{
+        &-slider{
+            .single-img{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

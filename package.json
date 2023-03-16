@@ -1,0 +1,31 @@
+{
+    "name": "oxybuild",
+    "version": "1.0.0",
+    "author": "Uzzal",
+    "private": true,
+    "scripts": {
+        "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt",
+        "build": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt build",
+        "start": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt start",
+        "generate": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/style-resources": "^1.0.0",
+        "aos": "^2.3.4",
+        "bootstrap": "^5.0.1",
+        "bootstrap-vue": "^2.21.2",
+        "core-js": "^3.13.1",
+        "mixitup": "^3.3.1",
+        "nuxt": "^2.15.6",
+        "swiper": "^5.3.7",
+        "vue-awesome-swiper": "^4.1.0",
+        "vue-backtotop": "^1.6.1",
+        "vue-cool-lightbox": "^2.7.4",
+        "vue-count-to": "^1.0.13"
+    },
+    "devDependencies": {
+        "sass": "^1.34.0",
+        "sass-loader": "^10.1.1",
+        "webpack": "^4.46.0"
+    }
+}

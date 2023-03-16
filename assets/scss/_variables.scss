@@ -1,0 +1,117 @@
+// Font Family
+$rajdhani: 'Rajdhani', sans-serif;
+$body-font: 'Yantramanav', sans-serif;;
+$heading-font: $rajdhani;
+
+
+
+
+// Colors
+$paragraph: #767988;
+$body-bg: #000;
+$body-color: #748494;
+$body-bg: white;
+$heading-color: #030f27;
+$primary-two: #3a7e69;
+$primary-three: #ef6f31;
+$secondary-light: #8C89A2;
+$secondary-three: #6ac5f1;
+$off-white: #f6f2ed;
+$white-gray: #f2f2f2;
+$white-light: #cacaca;
+$white: #fff;
+$black: #000;
+
+
+// Border Color
+$border-color: #d3d2d2;
+
+
+// Gray
+$gray-100: #f0f0f0;
+$gray-600: #fbfbfb;
+$gray-800: #f8f8f8;
+
+
+// Other Colors
+$blue: #02126a;
+$red: #dc3545;
+$yellow: #fc7418;
+$green: #32b618;
+$cyan: #0dcaf0;
+$lime-100: #e0fae7;
+$lime-600: #f0fff4;
+$lime-800: #d3f6dd;
+
+
+// Theme Color
+$primary: #ff5e13;
+$secondary: #00225a;
+$success: #146c43;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #0dcaf0;
+$light: #f8f9fa;
+$dark: #212529;
+
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"success": $success,
+	"info": $info,
+	"warning": $warning,
+	"danger": $danger,
+	"light": $light,
+	"dark": $dark,
+);
+
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1170px,
+	// xxl: 1200px,
+);
+// scss-docs-end container-max-widths
+
+// Default Transition
+$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+$baseTransition: all 0.3s ease 0s;
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-width: 1600px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+
+
+$headings-font-family: 'Rajdhani', sans-serif;
+$headings-font-weight: 700;
+$headings-line-height: 1.2;
+$headings-color: $secondary;
+
+

@@ -1,0 +1,42 @@
+/*----------------------------------------*/
+/*  13. Testimonial
+/*----------------------------------------*/
+.testimonial{
+    &-content{
+        border-radius: 0 25px 0 25px;
+        background-color: #eaf5ff;
+        padding: 30px 45px;
+        position: relative;
+        .short-desc{
+            font-family: $rajdhani;
+            position: relative;
+            font-weight: 500;
+            color: #2b2d37;
+            line-height: 24px;
+            font-size: 16px;
+            &:before {
+                content: "\f347";
+                font-size: 15px;
+                font-family: "Ionicons";
+                left: -15px;
+                position: absolute;
+            }
+        }
+        .user{
+            &-info{
+                display: flex;
+            }
+            &-content{
+                padding-left: 15px;
+            }
+            &-name{
+                font-size: 18px;
+                color: $primary;
+            }
+            &-occupation{
+                font-family: $rajdhani;
+                font-weight: 500;
+            }
+        }
+    }
+}

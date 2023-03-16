@@ -1,0 +1,51 @@
+/*----------------------------------------*/
+/*  21. login Register
+/*----------------------------------------*/
+.login,
+.register{
+    &-form{
+        background-color: $white;
+        padding: 30px;
+        box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+        .check-box{
+            display: flex;
+            align-items: center;
+        }
+        label{
+            cursor: pointer;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+        }
+        input{
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid $border-color;
+            border-radius: 0;
+            line-height: 23px;
+            padding: 10px 20px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+        }
+        .login-action {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            padding: 10px 35px;
+        }
+    }
+	&-title{
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: capitalize;
+		font-weight: 700;
+		margin-bottom: 0;
+		padding-bottom: 20px;
+	}
+}

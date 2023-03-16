@@ -1,0 +1,328 @@
+/* ---Section Space--- */
+
+/* --Padding Top-- */
+.pt-140{
+    padding-top: 140px;
+    @include media-breakpoint-down(xl){
+        padding-top: 120px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 100px;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 80px;
+    }
+}
+.pt-135{
+    padding-top: 135px;
+    @include media-breakpoint-down(xl){
+        padding-top: 115px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 95px;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 75px;
+    }
+}
+.pt-130{
+    padding-top: 130px;
+    @include media-breakpoint-down(xl){
+        padding-top: 110px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 90px;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 70px;
+    }
+}
+.pt-125{
+    padding-top: 125px;
+    @include media-breakpoint-down(xl){
+        padding-top: 105px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 85px;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 65px;
+    }
+}
+.pt-120{
+    padding-top: 120px;
+    @include media-breakpoint-down(xl){
+        padding-top: 100px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 80px;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 60px;
+    }
+}
+.pt-115{
+    padding-top: 115px;
+    @include media-breakpoint-down(xl){
+        padding-top: 95px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 75px;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 55px;
+    }
+}
+/* --End Here-- */
+
+/* --Padding Bottom-- */
+.pb-140{
+    padding-bottom: 140px;
+    @include media-breakpoint-down(xl){
+        padding-bottom: 120px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-bottom: 100px;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 80px;
+    }
+}
+.pb-135{
+    padding-bottom: 135px;
+    @include media-breakpoint-down(xl){
+        padding-bottom: 115px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-bottom: 95px;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 75px;
+    }
+}
+.pb-130{
+    padding-bottom: 130px;
+    @include media-breakpoint-down(xl){
+        padding-bottom: 110px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-bottom: 90px;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 70px;
+    }
+}
+.pb-125{
+    padding-bottom: 125px;
+    @include media-breakpoint-down(xl){
+        padding-bottom: 105px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-bottom: 85px;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 65px;
+    }
+}
+.pb-120{
+    padding-bottom: 120px;
+    @include media-breakpoint-down(xl){
+        padding-bottom: 100px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-bottom: 80px;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 60px;
+    }
+}
+.pb-115{
+    padding-bottom: 115px;
+    @include media-breakpoint-down(xl){
+        padding-bottom: 95px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-bottom: 75px;
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 55px;
+    }
+}
+/* --End Here-- */
+
+/* --Padding Y Axis-- */
+.py-140{
+    padding: 140px 0;
+    @include media-breakpoint-down(xl){
+        padding: 120px 0;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 100px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 80px 0;
+    }
+}
+.py-135{
+    padding: 135px 0;
+    @include media-breakpoint-down(xl){
+        padding: 115px 0;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 95px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 75px 0;
+    }
+}
+.py-130{
+    padding: 130px 0;
+    @include media-breakpoint-down(xl){
+        padding: 110px 0;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 90px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 70px 0;
+    }
+}
+.py-125{
+    padding: 125px 0;
+    @include media-breakpoint-down(xl){
+        padding: 105px 0;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 85px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 65px 0;
+    }
+}
+.py-120{
+    padding: 120px 0;
+    @include media-breakpoint-down(xl){
+        padding: 100px 0;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 60px 0;
+    }
+}
+.py-115{
+    padding: 115px 0;
+    @include media-breakpoint-down(xl){
+        padding: 95px 0;
+    }
+    @include media-breakpoint-down(lg){
+        padding: 75px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 55px 0;
+    }
+}
+/* --End Here-- */
+
+/* --------------------------------------
+    Additional Space for specific section
+----------------------------------------- */
+/* ---Padding Top--- */
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-35 {
+    padding-top: 35px;
+}
+.pt-100{
+    padding-top: 100px;
+    @include media-breakpoint-down(lg){
+        padding-top: 75px;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 60px;
+    }
+}
+
+/* ---Padding Bottom--- */
+.pb-7 {
+    padding-bottom: 35px;
+} 
+.pb-80{
+    padding-bottom: 80px;
+}
+.pb-70{
+    padding-bottom: 70px;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 40px;
+    }
+}
+/* ---Padding Left--- */
+.pl{
+    &-xl{
+        &-80{
+            @include media-breakpoint-up(xl){
+                padding-left: 80px;
+            }
+        }
+    }
+}
+.pl-60{
+    padding-left: 60px;
+}
+.pl-90{
+    padding-left: 90px;
+}
+
+.pb-xs-0{
+    @media (max-width: 575px){
+        padding-bottom: 0 !important;
+    }
+}
+
+/*--- margin top ---*/
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+.mtn-30 {
+    margin-top: -30px;
+}
+.mtn-35 {
+    margin-top: -35px;
+}
+.mtn-40 {
+    margin-top: -40px;
+}
+
+/*--- margin bottom ---*/
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-6 {
+    margin-bottom: 30px;
+}
+.mb-7 {
+    margin-bottom: 35px;
+}
+.mb-8 {
+    margin-bottom: 40px;
+}
+
+
+// End Here

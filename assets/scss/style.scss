@@ -1,0 +1,32 @@
+/*----- all scss file include here -----*/
+
+//icon fonts
+@import "../css/ionicons.min.css";
+
+@import "variables";
+@import "mixins";
+@import "common";
+@import "spacing";
+
+@import "header/header";
+@import "header/off-canvas-menu";
+@import "footer/footer";
+@import "components/slider";
+@import "components/buttons";
+@import "components/swiper-navigation";
+@import "components/animation";
+@import "components/banner";
+@import "components/about";
+@import "components/project";
+@import "components/service";
+@import "components/counter";
+@import "components/team";
+@import "components/testimonial";
+@import "components/blog";
+@import "components/newsletter";
+@import "components/breadcrumb";
+@import "components/sidebar";
+// @import "components/product";
+@import "components/contact";
+@import "components/login-register";
+@import "components/brand";

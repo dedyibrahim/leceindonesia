@@ -1,0 +1,168 @@
+/*----------------------------------------*/
+/*  03. Slider
+/*----------------------------------------*/
+/* ---Main Slider--- */
+.slide{
+	&-inner{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: #f7f7f7;
+		&.bg-height{
+			min-height: 785px;
+			@include media-breakpoint-down(xxl){
+				min-height: 610px;
+			}
+			@include media-breakpoint-down(md){
+				min-height: 480px;
+			}
+		}
+		&.style-02{
+			.slide{
+				&-content{
+					text-align: left;
+					.heading{
+						font-size: 70px;
+						line-height: 1;
+						span{
+							color: $primary;
+						}
+					}
+					.short-desc{
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+	&-content{
+		.sub-title{
+			font-family: $rajdhani;
+			font-size: 24px;
+			line-height: 30px;
+			display: block;
+			color: $primary;
+			position: relative;
+			padding-left: 100px;
+			&:before{
+				background-color: $primary;
+				width: 80px;
+				height: 1px;
+				position: absolute;
+				content: "";
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
+		}
+		.title{
+			font-size: 88px;
+			line-height: 85px;
+			font-weight: 700;
+			max-width: 57%;
+			@include media-breakpoint-down(xxl){
+				max-width: 85%;
+			}
+			@include media-breakpoint-down(md){
+				font-size: 50px;
+				line-height: 1;
+			}
+			@include media-breakpoint-down(sm){
+				max-width: 100%;
+			}
+			span{
+				color: $primary;
+			}
+		}
+		.short-desc-2{
+			max-width: 520px;
+			@include media-breakpoint-down(sm){
+				max-width: 100%;
+			}
+		}
+		.btn{
+			font-family: $rajdhani;
+			font-weight: 600;
+		}
+	}
+}
+
+.slider-area {
+	.swiper-pagination {
+		bottom: 20px;
+		left: 50%;
+		z-index: 1;
+		position: absolute;
+		transform: translateX(-50%);
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: $primary;
+			display: inline-block;
+			& + .swiper-pagination-bullet {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+/*-- Hero Slider Content Animation --*/
+.slide-content {
+    & > * {
+        animation-duration: 1.5s;
+        animation-fill-mode: both;
+        animation-name: fadeOutUp;
+    }
+}
+.swiper-slide-active{
+    & .slide-content {
+
+        // All Element Selector
+        & > * {
+            animation-name: fadeInUp;
+            
+            // Child Selector
+            &:nth-child(1) {
+                animation-delay: 0.9s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.2s;
+            }
+            &:nth-child(4) {
+                animation-delay: 1.8s;
+            }
+            &:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+            &:nth-child(6) {
+                animation-delay: 3s;
+            } 
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}

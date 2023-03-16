@@ -1,0 +1,187 @@
+/*----------------------------------------*/
+/*  14. Blog
+/*----------------------------------------*/
+.blog {
+    &-slider {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: -5px;
+        margin-top: -5px;
+    }
+    &-item {
+        background-color: #f4f8ff;
+        .inner {
+            &-item {
+                box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+            }
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-img {
+        display: block;
+        overflow: hidden;
+    }
+    &-content {
+        padding: 25px 30px 20px;
+        p {
+            color: #8d8f92;
+        }
+    }
+    &-meta {
+        color: $primary;
+        font-weight: 500;
+        text-transform: capitalize;
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+        }
+    }
+    &-button-wrap {
+        border-top: 1px solid $border-color;
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        li {
+            a {
+                color: inherit;
+                &:hover {
+                    color: $primary;
+                }
+            }
+            .comment {
+                border: none;
+                color: inherit;
+                background-color: transparent;
+                padding: 0;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+/* ---Blog Detail--- */
+.blog {
+    &-detail-area {
+        .single-content {
+            .sub-title {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/* ---Social With Tags--- */
+.social-with-tags {
+    border-top: 1px solid $border-color;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 479px) {
+        flex-direction: column;
+    }
+    .tags {
+        display: flex;
+        @media (max-width: 479px) {
+            padding-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        li {
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+            a {
+                font-size: 18px;
+            }
+            i {
+                vertical-align: middle;
+            }
+        }
+    }
+    .social-link {
+        li {
+            &:not(:last-child) {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+/* ---Blog Comment--- */
+.blog {
+    &-comment {
+        &-wrap {
+            li {
+                display: flex;
+                @media (max-width: 479px) {
+                    flex-direction: column;
+                }
+                &:not(:last-child) {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+        &-desc {
+            @include media-breakpoint-up(lg) {
+                max-width: 690px;
+            }
+        }
+        &-img {
+            width: 90px;
+        }
+        &-content {
+            padding-left: 20px;
+            width: calc(100% - 90px);
+            @media (max-width: 479px) {
+                width: 100%;
+                padding-left: 0;
+                padding-top: 20px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .blog-meta {
+                font-size: 14px;
+                display: block;
+            }
+            .short-desc {
+                color: #8d8f92;
+            }
+            .btn {
+                &-link {
+                    color: $secondary;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---Blog Feedback--- */
+.blog {
+    &-feedback {
+        &-form {
+            .group-input {
+                display: flex;
+                @include media-breakpoint-down(xl) {
+                    flex-direction: column;
+                }
+            }
+            .input-field,
+            .textarea-field {
+                border: 1px solid $border-color;
+                padding: 15px;
+                width: 100%;
+                height: 45px;
+            }
+            .textarea-field {
+                height: 180px;
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_788c6ab9"
+  },
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\blog.vue",
+    "chunkName": "pages/blog",
+    "_name": "_39ce6ba6"
+  },
+  {
+    "name": "blog-details",
+    "path": "/blog-details",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\blog-details.vue",
+    "chunkName": "pages/blog-details",
+    "_name": "_03af909b"
+  },
+  {
+    "name": "blog-left-sidebar",
+    "path": "/blog-left-sidebar",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\blog-left-sidebar.vue",
+    "chunkName": "pages/blog-left-sidebar",
+    "_name": "_46df830d"
+  },
+  {
+    "name": "blog-right-sidebar",
+    "path": "/blog-right-sidebar",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\blog-right-sidebar.vue",
+    "chunkName": "pages/blog-right-sidebar",
+    "_name": "_23cbc1c4"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_eccd1668"
+  },
+  {
+    "name": "login-register",
+    "path": "/login-register",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\login-register.vue",
+    "chunkName": "pages/login-register",
+    "_name": "_05f8330b"
+  },
+  {
+    "name": "our-clients",
+    "path": "/our-clients",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\our-clients.vue",
+    "chunkName": "pages/our-clients",
+    "_name": "_b1feb09a"
+  },
+  {
+    "name": "our-team",
+    "path": "/our-team",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\our-team.vue",
+    "chunkName": "pages/our-team",
+    "_name": "_37dddc42"
+  },
+  {
+    "name": "our-working-process",
+    "path": "/our-working-process",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\our-working-process.vue",
+    "chunkName": "pages/our-working-process",
+    "_name": "_7960ecfe"
+  },
+  {
+    "name": "project",
+    "path": "/project",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\project.vue",
+    "chunkName": "pages/project",
+    "_name": "_4f247745"
+  },
+  {
+    "name": "project-details",
+    "path": "/project-details",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\project-details.vue",
+    "chunkName": "pages/project-details",
+    "_name": "_6a4b8d3a"
+  },
+  {
+    "name": "service",
+    "path": "/service",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\service.vue",
+    "chunkName": "pages/service",
+    "_name": "_1438c4e1"
+  },
+  {
+    "name": "service-details",
+    "path": "/service-details",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\service-details.vue",
+    "chunkName": "pages/service-details",
+    "_name": "_6b130254"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\My Project\\\\leceindonesia\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_cf777504"
+  }
+]

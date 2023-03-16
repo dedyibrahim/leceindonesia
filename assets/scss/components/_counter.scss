@@ -1,0 +1,52 @@
+/*----------------------------------------*/
+/*  11. Counter
+/*----------------------------------------*/
+.counter{
+    &-item{
+        position: relative;
+        text-align: center;
+        .count{
+            font-size: 60px;
+            line-height: 40px;
+            &-title{
+                color: $primary;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 30px;
+                margin-top: 5px;
+            }
+            &-inner-text{
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 2px #eaecef;
+                position: absolute;
+                font-size: 100px;
+                line-height: 48px;
+                top: -30px;
+                left: 50%;
+                z-index: -1;
+                opacity: 0.5;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+[class*="col-"]{
+    &:not(:nth-child(n+2)){
+        .counter{
+            &-item{
+                @include media-breakpoint-down(lg){
+                    padding-bottom: 80px;
+                }
+            }
+        }
+    }
+    &:not(:last-child){
+        .counter{
+            &-item{
+                @media (max-width: 575px){
+                    padding-bottom: 80px;
+                }
+            }
+        }
+    }
+}

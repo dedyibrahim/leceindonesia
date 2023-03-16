@@ -1,0 +1,108 @@
+/*----------------------------------------*/
+/*  10. Service
+/*----------------------------------------*/
+.service{
+    &-area{
+        .section-banner{
+            padding: 35px;
+        }
+    }
+    &-item {
+        .service-img{
+            display: block;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+            a {
+                display: block;
+            }
+        }
+        .add-action{
+            background-color: $secondary;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                font-size: 28px;
+                color: $white;
+            }
+            .icon{
+                background-color: $primary;
+                width: 35px;
+                height: 35px;
+                line-height: 38px;
+                text-align: center;
+                i{
+                    color: $white;
+                    display: block;
+                }
+            }
+        }
+        &:hover {
+            .service-img {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.service-slider {
+    .swiper-button-next,
+    .swiper-button-prev {
+        &:hover {
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+}
+
+/* ---Single Service--- */
+.single{
+    &-service{
+        &-content{
+            .sub-title{
+                font-weight: 500;
+                color: $primary;
+                font-size: 28px;
+            }
+        }
+        .service-list-area{
+            .list-item{
+                li{
+                    display: flex;
+                    font-size: 18px;
+                    max-width: 360px;
+                    &:not(:last-child){
+                        padding-bottom: 20px;
+                    }
+                    .list-icon{
+                        i{
+                            vertical-align: middle;
+                            color: $primary;
+                        }
+                    }
+                    .list-text{
+                        padding-left: 20px;
+                    }
+                }
+                &.style{
+                    &-2{
+                        li{
+                            display: inline-block;
+                            span{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            .list-desc{
+                max-width: 335px;
+            }
+        }
+    }
+}

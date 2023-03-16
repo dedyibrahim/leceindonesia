@@ -1,0 +1,188 @@
+/*----------------------------------------*/
+/*  09. Project
+/*----------------------------------------*/
+.project{
+    &-inner{
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-item{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .project{
+                &-content{
+                    visibility: visible;
+                    opacity: 0.76;
+                    bottom: 30px;
+                }
+            }
+        }
+    }
+    &-img{
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    &-content{
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        background-color: $white;
+        position: absolute;
+        bottom: -145px;
+        left: 30px;
+        width: calc(100% - 60px);
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transition: $baseTransition;
+        opacity: 0;
+        visibility: hidden;
+        .sub-title {
+            text-transform: uppercase;
+        }
+    }
+}
+.project{
+    &-slider{
+        &-2{
+            .project{
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.project-with-title{
+    display: flex;
+    align-items: flex-end;
+    @media (max-width: 479px){
+        flex-direction: column-reverse;
+    }
+    .section{
+        &-title{
+            &-area{
+                width: 285px;
+                @include media-breakpoint-down(sm){
+                    width: 180px;
+                }
+                @media (max-width: 479px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .project{
+        &-slider{
+            width: calc(100% - 285px);
+            @include media-breakpoint-down(sm){
+                width: calc(100% - 180px);
+            }
+            @media (max-width: 479px) {
+                padding-top: 30px;
+                width: 100%;
+            }
+        }
+    }
+    .title-with-arrow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .project{
+            &-button{
+                &-wrap{
+                    background-color: $white;
+                    height: 155px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 150px;
+                    @media (max-width: 479px){
+                        background-color: transparent;
+                        height: auto;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+                &-next,
+                &-prev{
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    @media (max-width: 479px){
+                        width: 30px;
+                        height: 30px;
+                    }
+                    i{
+                        transition: $baseTransition;
+                        color: #00225a;
+                        font-size: 30px;
+                        @media (max-width: 479px){
+                            font-size: 25px;
+                            color: $white;
+                        }
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---Project Detail--- */
+.project{
+    &-detail-area{
+        .single{
+            &-content{
+                .sub-title{
+                    font-weight: 500;
+                }
+                .additional-title{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+/* ---Project Detal Related Stuff--- */
+.project{
+    &-detail-banner{
+        margin: -10px;
+        .single-img{
+            margin: 10px;
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    &-overview{
+        &-list{
+            li{
+                display: flex;
+                &:not(:last-child){
+                    padding-bottom: 15px;
+                }
+            }
+            .list-icon{
+                i{
+                    color: $primary;
+                }
+            }
+            .list-text{
+                padding-left: 10px;
+                max-width: 290px;
+            }
+        }
+    }
+}

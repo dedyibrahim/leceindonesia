@@ -1,0 +1,88 @@
+/*----------------------------------------*/
+/*  16. Footer
+/*----------------------------------------*/
+.widget{
+    &-item{
+        .heading{
+            font-weight: 600;
+            margin-bottom: 30px;
+            //res
+            @include media-breakpoint-down(sm){
+                margin-bottom: 20px;
+            }
+        }
+        a{
+            &:hover{
+                color: $primary;
+            }
+        }
+        .inquiry{
+            h5{
+                font-size: 18px;
+                line-height: 26px;
+            }
+            a{
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+    }
+    &-list-item{
+        &.specific-item{
+            @include media-breakpoint-up(lg){
+                padding-top: 40px;
+            }
+        }
+        li{
+            &:not(:last-child){
+                padding-bottom: 15px;
+            }
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* ---Fotter Bottom--- */
+.footer{
+    &-bottom{
+        .social-link{
+            a {
+                border: 1px solid #415981;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                line-height: 32px;
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+                &:hover{
+                    i {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .copyright,
+        .social-link{
+            @include media-breakpoint-down(sm){
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .copyright{
+            text-align: right;
+            @include media-breakpoint-down(sm){
+                padding-top: 10px;
+                text-align: center;
+            }
+            &-text{
+                i{
+                    color: $primary;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+/*----------------------------------------*/
+/*  07. Banner
+/*----------------------------------------*/
+.banner{
+    &-item{
+        padding: 40px 35px;
+    }
+    &-content{
+        .short-desc{
+            font-weight: 300;
+            font-family: $body-font;
+            @include media-breakpoint-down(lg){
+                font-size: 16px;
+            }
+        }
+        .button-wrap{
+            .btn{
+                &-link{
+                    font-size: 18px;
+                    color: $white;
+                    i{
+                        transition: $baseTransition;
+                        vertical-align: text-top;
+                        margin-left: 10px;
+                    }
+                    &.with-hover{
+                        &:hover{
+                            color: $primary;
+                            i{
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-style{
+        &-2{
+            .banner{
+                &-img{
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+                &-content{
+                    padding: 90px 0;
+                    padding-left: 115px;
+                    margin: auto 0;
+                    width: calc(100% - 250px);
+                    @include media-breakpoint-down(xxl){
+                        padding-left: 55px;
+                        width: 100%;
+                    }
+                    @include media-breakpoint-down(xl){
+                        padding: 60px 30px;
+                    }
+                    span{
+                        padding-bottom: 10px;
+                        font-weight: 700;
+                        margin-top: -5px;
+                        color: $primary;
+                        font-size: 20px;
+                        display: block;
+                    }
+                    .title{
+                        font-size: 60px;
+                        line-height: 1;
+                        @include media-breakpoint-only(xl){
+                            font-size: 50px;
+                        }
+                        @include media-breakpoint-down(sm){
+                            font-size: 36px;
+                        }
+                    }
+                    .desc{
+                        max-width: 480px;
+                        @include media-breakpoint-down(md){
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &-3{
+            .banner{
+                &-secondary-bg,
+                &-primary-bg{
+                    &:before{
+                        background-color: $secondary;
+                        width: 100%;
+                        height: 100%;
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                    }
+                }
+                &-primary-bg{
+                    &:before{
+                        background-color: $primary;
+                    }
+                }
+                &-item{
+                    position: relative;
+                    overflow: hidden;
+                }
+                &-content{
+                    &:before{
+                        color: #0d2d62;
+                        content: attr(data-count);
+                        display: block;
+                        position: absolute;
+                        bottom: -20px;
+                        right: -10px;
+                        font-size: 120px;
+                        font-weight: 900;
+                        line-height: 1;
+                        z-index: -1;
+                    }
+                    &.different-data-color{
+                        &:before{
+                            color: #ff6e2b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-with-sticker{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    &-sticker{
+        img{
+            width: 100%;
+        }
+    }
+}
